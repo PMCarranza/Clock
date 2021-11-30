@@ -26,6 +26,8 @@ function setRotation(element, rotationRatio){
 
 setClock();
 
+function getDay(){
+
 const todaysDate = new Date()
 
 let day = todaysDate.getDay();
@@ -64,3 +66,18 @@ switch(day){
         day = 'SAT';
         console.log(`today is ${day}`);
 }
+
+console.log(`today is ${day}`);
+console.log (`the date is ${date}`);
+
+let dayOnClock = day;
+let dateOnClock = date;
+
+console.log(`day on clock ${dayOnClock}`);
+console.log (`date on clock ${dateOnClock}`);
+
+$('#date').append(`${dayOnClock} ${dateOnClock}`);
+
+}
+
+getDay();
