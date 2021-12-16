@@ -12,7 +12,7 @@ body{
     width: 90vh;
     height: 90vh;
     background-image: url(../images/clock-face.jpg);
-    background-size: 100%;
+    background-size: cover;
     border-radius: 50%;
     border: 2px solid black;
     position: relative;
@@ -38,8 +38,9 @@ body{
     --rotation: 60deg;
 }
 
-/* .number3{
-} */
+#date{
+    text-shadow: 6px 6px 6px black;
+}
 
 .clock .number4{
     --rotation: 120deg;
@@ -125,3 +126,17 @@ body{
     left: 52.5%;
     transform: translate(-15%, 0%);
 }
+
+@media only screen and (max-width: 780px) {
+    .clock {
+        width: 50vh;
+        height: 50vh;    
+    }
+  }
+
+  @media only screen and (max-width: 550px) {
+    .clock {
+        width: 40vh;
+        height: 40vh;    
+    }
+  }
